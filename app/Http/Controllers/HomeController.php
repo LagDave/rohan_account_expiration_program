@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\DB;
 class HomeController extends Controller
 {
     public function index(){
-        $all_users = DB::select("SELECT * FROM RohanUser.dbo.TUser");
+        $all_users = DB::select("SELECT * FROM TUser");
         return $all_users;
     }
 }
